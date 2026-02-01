@@ -11,7 +11,18 @@ A fun little side project you can customize and share with your loved one. It pr
 
 ## Quick Start
 
+### From Docker Hub
+
 ```bash
+docker run -d --name container-name -p 80:80 -e NAME=your-spouse-name vietnguyen-dev/valentines-image
+```
+
+### Build Locally
+
+```bash
+git clone https://github.com/vietnguyen-dev/valentines-image.git
+cd valentines-image
+docker build -t valentine .
 docker run -d --name container-name -p 80:80 -e NAME=your-spouse-name valentine
 ```
 
