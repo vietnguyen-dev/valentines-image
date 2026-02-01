@@ -14,7 +14,8 @@ A fun little side project you can customize and share with your loved one. It pr
 ### From Docker Hub
 
 ```bash
-docker run -d --name container-name -p 80:80 -e NAME=your-spouse-name vietnguyen-dev/valentines-image
+docker pull keithchen2000/valentines
+docker run -d --name container-name -p 80:80 -e NAME=your-spouse-name keithchen2000/valentines
 ```
 
 ### Build Locally
