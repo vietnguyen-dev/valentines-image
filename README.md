@@ -12,12 +12,13 @@ A fun little side project you can customize and share with your loved one. It pr
 ## Quick Start
 
 ```bash
-docker build -t valentine .
-docker run -d -p 80:80 valentine
+docker run -d --name container-name -p 80:80 -e NAME=your-spouse-name valentine
 ```
 
 Then open `http://localhost` in your browser.
 
+The `NAME` environment variable sets the name displayed on the page. It defaults to `Vera` if not provided.
+
 ## Customization
 
-Edit `html/index.html` to change the name, colors, or messages to make it your own.
+Edit `html/index.html` to change colors or messages to make it your own.
